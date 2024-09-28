@@ -25,8 +25,8 @@ def main():
         new_l[ind] = '..'
         new_l = ' '.join(new_l)
         print(f'Question: {new_l}')
-        player_choice = input('Your answer: ')
-        get_answer(player_choice, answer, name)
+        choice = input('Your answer: ')
+        get_answer(choice, answer, name)
     print(f'Congratulations, {name}!')
 
 

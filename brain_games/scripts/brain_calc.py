@@ -28,8 +28,8 @@ def main():
             operate = '*'
             answer = operator.mul(num1, num2)
         print(f'Question: {num1} {operate} {num2}')
-        player_choice = input('Your answer: ')
-        get_answer(player_choice, answer, name)
+        choice = input('Your answer: ')
+        get_answer(choice, answer, name)
     print(f'Congratulations, {name}!')
 
 

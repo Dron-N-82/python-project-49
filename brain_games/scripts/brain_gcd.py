@@ -24,8 +24,8 @@ def main():
                 num1 = num2
                 num2 = remainder
         print(f'Question: {num1} {num2}')
-        player_choice = input('Your answer: ')
-        get_answer(player_choice, answer, name)
+        choice = input('Your answer: ')
+        get_answer(choice, answer, name)
     print(f'Congratulations, {name}!')
 
 
