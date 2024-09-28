@@ -10,7 +10,7 @@ def main():
     print("Welcome to the Brain Games!")
     name = prompt.string('May I have your name? ')
     print(f'Hello, {name}!')
-    print('What number is missing in the progression?')
+    print('Answer "yes" if given number is prime. Otherwise answer "no".')
     for attempt in range(3):
         answer = ''
         number = random.randint(1, 100)
