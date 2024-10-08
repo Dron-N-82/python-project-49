@@ -1,0 +1,17 @@
+import prompt
+
+
+def play(game):
+    print("Welcome to the Brain Games!")
+    name = prompt.string('May I have your name? ')
+    print(f'Hello, {name}!')
+    print(game.description)
+    for _ in range(3):
+        choice, answer = game.get_choice_and_answer()
+        if choice == str(answer):
+            print('Correct!')
+        else:
+            print(f"'{choice}' is wrong answer ;(. Correct answer was '{answer}'.")
+            print(f"Let's try again, {name}!")
+            exit()
+    print(f'Congratulations, {name}!')
