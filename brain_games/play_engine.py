@@ -14,5 +14,5 @@ def play(game):
             print(f"'{choice}' is wrong answer ;(. "
                   f"Correct answer was '{answer}'.\n"
                   f"Let's try again, {name}!")
-            break
-        print(f'Congratulations, {name}!')
+            exit()
+    print(f'Congratulations, {name}!')
